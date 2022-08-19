@@ -65,3 +65,6 @@ typings/
 
 # dist folder as I plan to migrate to typescript soon
 dist
+
+# key file
+key.json
