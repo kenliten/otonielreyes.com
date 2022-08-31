@@ -9,6 +9,7 @@ const pagesRouter = require('./routes/pages');
 
 const app = express();
 
+// inserted this comment
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
