@@ -1,4 +1,15 @@
 RewriteEngine On
+
+# Redirect requests for .htaccess, .env, and /vendor/ to index.php
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(\.htaccess|\.env)$ index.php [L]
+
+RewriteCond %{REQUEST_URI} ^/vendor/ [NC]
+RewriteRule ^ index.php [L]
+
+# Check if the requested file or directory exists
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+
+# If the requested file doesn't exist, redirect to index.php
 RewriteRule ^ index.php [L]

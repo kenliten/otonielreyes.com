@@ -1,7 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<title>Otoniel Reyes' Blog</title>
 <?php
 require 'vendor/autoload.php';
-
-use Parsedown;
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
@@ -25,17 +30,18 @@ $availableThemesContent = fetchGitHubContent($availableThemesPath);
 if ($availableThemesContent !== false) {
     // Extract available themes from the response
     $availableThemes = [];
-    foreach ($availableThemesContent as $theme) {
-        if ($theme['type'] === 'file') {
-            $availableThemes[] = $theme['name'];
-        }
+    $availableThemeFiles = explode('\n', base64_decode($availableThemesContent['content']));
+
+    foreach($availableThemeFiles as $theme) {
+        $availableThemes[] = $theme;
     }
 
     // Randomly select a theme
     $randomTheme = $availableThemes[array_rand($availableThemes)];
 
     // Generate the link tag for the selected theme
-    echo "<link rel='stylesheet' href='https://raw.githubusercontent.com/$githubRepo/themes/$randomTheme'>";
+    echo "<link rel='stylesheet' href='https://raw.githubusercontent.com/$githubRepo/main/themes/$randomTheme'>";
+    echo "</head><body>";
 }
 
 // Check if the requested route starts with '/blog/'
@@ -47,15 +53,16 @@ if (strpos($requestedPath, '/blog/') === 0) {
     $blogContent = fetchGitHubContent($blogEntryPath);
 
     if ($blogContent !== false) {
+        echo $blogContent;
         renderMarkdown(base64_decode($blogContent['content']));
     } else {
         // Show the 404.md from the 'pages' folder
-        renderMarkdown(fetchGitHubContent("https://api.github.com/repos/$githubRepo/contents/pages/404.md")['content']);
+        renderMarkdown(base64_decode(fetchGitHubContent("https://api.github.com/repos/$githubRepo/contents/pages/404.md")['content']));
     }
 } else {
     // Check if the requested route is like /page-slug-here
     $requestedSlug = substr($requestedPath, 1); // Remove the leading '/'
-    $pagePath = "https://api.github.com/repos/$githubRepo/contents/pages/$requestedSlug.md";
+    $pagePath = $requestedSlug == '' ? "https://api.github.com/repos/$githubRepo/contents/pages/index.md" :  "https://api.github.com/repos/$githubRepo/contents/pages/$requestedSlug.md";
 
     // Fetch the requested page content from GitHub
     $pageContent = fetchGitHubContent($pagePath);
@@ -64,7 +71,7 @@ if (strpos($requestedPath, '/blog/') === 0) {
         renderMarkdown(base64_decode($pageContent['content']));
     } else {
         // Show the 404.md from the 'pages' folder
-        renderMarkdown(fetchGitHubContent("https://api.github.com/repos/$githubRepo/contents/pages/404.md")['content']);
+        renderMarkdown(base64_decode(fetchGitHubContent("https://api.github.com/repos/$githubRepo/contents/pages/404.md")['content']));
     }
 }
 
@@ -74,7 +81,7 @@ function fetchGitHubContent($url)
     global $githubToken;
     $options = [
         'http' => [
-            'header' => "Authorization: token $githubToken\r\n" . "User-Agent: Awesome-App"
+            'header' => "Authorization: token $githubToken\r\n" . "User-Agent: Otoniel Reyes' Blog"
         ]
     ];
     $context = stream_context_create($options);
@@ -82,3 +89,7 @@ function fetchGitHubContent($url)
 
     return $content ? json_decode($content, true) : false;
 }
+?>
+
+</body>
+</html>
