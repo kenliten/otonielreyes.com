@@ -44,7 +44,7 @@ if ($availableThemesContent !== false) {
     $randomTheme = $availableThemes[array_rand($availableThemes)];
 
     // Generate the link tag for the selected theme
-    echo "<link rel='stylesheet' href='https://raw.githubusercontent.com/$githubRepo/main/themes/$randomTheme'>";
+    echo "<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/$githubRepo/themes/$randomTheme'>";
     echo "</head><body>";
 }
 
