@@ -1,4 +1,4 @@
-![Otoniel Reyes Text](https://github.com/kenliten/otonielreyes.com/blob/main/static/logo.png "Otoniel Reyes Logo")
+![Otoniel Reyes Text](https://raw.githubusercontent.com/kenliten/otonielreyes.com/main/static/logo.png "Otoniel Reyes Logo")
 
 # Welcome to My Blog!
 
