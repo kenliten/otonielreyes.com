@@ -5,7 +5,6 @@ As contributors and maintainers of this blog, we pledge to create a respectful, 
 ## 1. Inclusive Environment
 
 - **Respect and Consideration**: Treat all individuals with respect and kindness, regardless of their background, identity, or beliefs.
-- **Inclusive Language**: Use inclusive language and avoid any form of discrimination, harassment, or offensive remarks.
 
 ## 2. Respectful Communication
 
@@ -19,7 +18,7 @@ As contributors and maintainers of this blog, we pledge to create a respectful, 
 
 ## 4. Reporting Incidents
 
-- **Incident Reporting**: Report any violations of this Code of Conduct to the maintainers/administrators through otoniel@otonielreyes.com.
+- **Incident Reporting**: Report any violations of this Code of Conduct to the maintainers/administrators through [email](mailto:otoniel@otonielreyes.com) or [telegram](https://t.me/gaegelys).
 - **Confidentiality**: All reported incidents will be handled with discretion and confidentiality.
 
 ## 5. Compliance and Enforcement
