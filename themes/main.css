@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Body */
 body {
     font-family: 'Roboto', sans-serif;
     color: #333; /* Text color */
     margin: 0;
-    padding: 32px 0;
+    padding: 32px;
     line-height: 1.6;
 }
 

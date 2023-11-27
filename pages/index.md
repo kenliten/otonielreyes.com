@@ -1,3 +1,5 @@
+![Otoniel Reyes Text](https://github.com/kenliten/otonielreyes.com/blob/main/static/logo.png "Otoniel Reyes Logo")
+
 # Welcome to My Blog!
 
 I'm thrilled to have you here. 🌟 Feel free to explore the content and engage with the community!

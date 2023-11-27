@@ -1,5 +1,7 @@
 # Welcome to Otoniel Reyes' blog!
 
+![Otoniel Reyes Text](https://github.com/kenliten/otonielreyes.com/blob/main/static/logo.png "Otoniel Reyes Logo")
+
 Welcome to Otoniel Reyes' blog – a community-driven platform for insightful articles, discussions, and resources on [blog topic/interest]. We're thrilled to have you here!
 
 ## About Otoniel Reyes' blog
