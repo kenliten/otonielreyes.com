@@ -6,9 +6,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333; /* Text color */
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 32px;
     line-height: 1.6;
+    text-align: center;
 }
 
 /* Headings */
@@ -53,4 +55,10 @@ footer {
     background-color: #f8f8f8; /* Footer background color */
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        text-align: left;
+    }
 }
