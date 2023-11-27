@@ -18,12 +18,25 @@ function renderMarkdown($content)
 }
 
 // Get a random stylesheet from the 'themes' folder
-$themesFolder = 'themes';
-$stylesheets = glob($themesFolder . '/*.css');
-$randomStylesheet = $stylesheets[array_rand($stylesheets)];
+// Fetch available themes list from GitHub
+$availableThemesPath = "https://api.github.com/repos/$githubRepo/contents/themes/available";
+$availableThemesContent = fetchGitHubContent($availableThemesPath);
 
-// Output the randomly selected stylesheet
-echo "<link rel='stylesheet' href='$randomStylesheet'>";
+if ($availableThemesContent !== false) {
+    // Extract available themes from the response
+    $availableThemes = [];
+    foreach ($availableThemesContent as $theme) {
+        if ($theme['type'] === 'file') {
+            $availableThemes[] = $theme['name'];
+        }
+    }
+
+    // Randomly select a theme
+    $randomTheme = $availableThemes[array_rand($availableThemes)];
+
+    // Generate the link tag for the selected theme
+    echo "<link rel='stylesheet' href='https://raw.githubusercontent.com/$githubRepo/themes/$randomTheme'>";
+}
 
 // Check if the requested route starts with '/blog/'
 if (strpos($requestedPath, '/blog/') === 0) {
