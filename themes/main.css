@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #333; /* Text color */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 32px;
     padding: 32px;
     line-height: 1.6;
     text-align: center;
@@ -36,6 +36,7 @@ nav ul {
 }
 
 nav ul li {
+    list-style: none;
     display: inline;
     margin-right: 20px;
 }
@@ -61,5 +62,6 @@ footer {
 @media screen and (min-width: 1200px) {
     body {
         text-align: left;
+        margin: 0 auto;
     }
 }
