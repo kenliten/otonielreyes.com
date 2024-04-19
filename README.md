@@ -19,7 +19,7 @@ I encourage and welcome contributions from the community! Whether you're passion
 - **Blog Entries**: Share your thoughts, expertise, or experiences by contributing blog entries.
 - **Improvements**: Feel free to suggest improvements, report issues, or submit pull requests.
 
-Check out our [Contribution Guide](./pages/contributing) to get started!
+Check out our [Contribution Guide](https://github.com/kenliten/otonielreyes.com/blob/main/CONTRIBUTING) to get started!
 
 ## Join Our Community
 
@@ -33,7 +33,7 @@ I value a respectful and inclusive environment. Please review our [Code of Condu
 
 ## Get Involved
 
-I encourage you to explore our community, read our [Contribution Guide](./pages/contributing), familiarize yourself with our [Code of Conduct](./pages/code-of-conduct), and start contributing!
+I encourage you to explore our community, read our [Contribution Guide](https://github.com/kenliten/otonielreyes.com/blob/main/CONTRIBUTING), familiarize yourself with our [Code of Conduct](./pages/code-of-conduct), and start contributing!
 
 Your engagement and contributions play a vital role in shaping our community. Thank you for being part of Otoniel Reyes' blog!
 
