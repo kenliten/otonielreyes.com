@@ -4,7 +4,7 @@
 
 Welcome to Otoniel Reyes' blog – a community-driven platform for insightful articles, discussions, and resources on software development. I'm thrilled to have you here!
 
-[Home](https://otonielreyes.com) | [Blog](https://otonielreyes.com/blog) | [Home Labbing](https://otonielreyes.com/home-labbing)
+[Home](https://otonielreyes.com) | [Blog](./blog) | [Home Labbing](./pages/home-labbing)
 
 ## About Otoniel Reyes' blog
 

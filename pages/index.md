@@ -1,4 +1,4 @@
-![Otoniel Reyes Text](https://raw.githubusercontent.com/kenliten/otonielreyes.com/main/static/logo.png "Otoniel Reyes Logo")
+![Otoniel Reyes](https://raw.githubusercontent.com/kenliten/otonielreyes.com/main/static/logo.png "Otoniel Reyes Logo")
 
 # Welcome to My Blog!
 
@@ -6,12 +6,12 @@ I'm thrilled to have you here. 🌟 Feel free to explore the content and engage 
 
 ## Links
 
-[Home](https://otonielreyes.com/) | [Blog](https://otonielreyes.com/blog) | [Showcase](https://otonielreyes.com/showcase) | [Contact](https://otonielreyes.com/contact)
+[Home](https://otonielreyes.com/) | [Blog](https://otonielreyes.com/blog) | [Showcase](../pages/showcase.md) | [Contact](../pages/contact.md)
 
 ## Contact Me
 
 ### 📧 Email
-- [Your Email](mailto:otoniel@otonielreyes.com)
+- [otgalay.dev@gmail.com](mailto:orgalay.dev@gmail.com)
 
 ### 📱 Telegram
 - [Telegram](https://t.me/gaegelys)
