@@ -4,6 +4,8 @@
 
 Welcome to Otoniel Reyes' blog – a community-driven platform for insightful articles, discussions, and resources on software development. I'm thrilled to have you here!
 
+[Home](https://otonielreyes.com) | [Blog](https://otonielreyes.com/blog) | [Home Labbing](https://otonielreyes.com/home-labbing)
+
 ## About Otoniel Reyes' blog
 
 Otoniel Reyes' blog aims to promote software development help, tricks, guidance and to fence self-taught skills and personal development. I believe in the power of community collaboration and diverse perspectives to create a rich, informative, and engaging platform for our readers.
