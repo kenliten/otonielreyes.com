@@ -1,6 +1,6 @@
 # Welcome to Otoniel Reyes' blog!
 
-![Otoniel Reyes Text](https://github.com/kenliten/otonielreyes.com/blob/main/static/logo.png, "Otoniel Reyes Logo")
+![Otoniel Reyes Text](https://github.com/kenliten/otonielreyes.com/blob/main/static/logo.png)
 
 Welcome to Otoniel Reyes' blog – a community-driven platform for insightful articles, discussions, and resources on software development. I'm thrilled to have you here!
 
