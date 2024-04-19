@@ -6,7 +6,7 @@ I'm thrilled to have you here. 🌟 Feel free to explore the content and engage 
 
 ## Links
 
-[Home](https://otonielreyes.com/) | [Blog](https://otonielreyes.com/blog) | [Showcase](../pages/showcase.md) | [Contact](../pages/contact.md)
+[Home](https://otonielreyes.com/) | [Blog](../blog) | [Showcase](./showcase.md) | [Contact](./contact.md)
 
 ## Contact Me
 
